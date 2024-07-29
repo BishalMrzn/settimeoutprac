@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Console</title>
+    <style>
+      #customConsole {
+        background-color: black;
+        color: green;
+        font-family: monospace;
+        padding: 10px;
+        width: 100%;
+        height: 300px;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="customConsole"></div>
+
+    <script>
+      const customConsole = document.getElementById("customConsole");
+
+      function logToCustomConsole(message) {
+        const messageElement = document.createElement("div");
+        messageElement.textContent = message;
+        customConsole.appendChild(messageElement);
+        customConsole.scrollTop = customConsole.scrollHeight;
+      }
+
+      setTimeout(() => {
+        logToCustomConsole("Hacking..");
+      }, 1000);
+      setTimeout(() => {
+        logToCustomConsole("Tracking all devices");
+      }, 2000);
+      setTimeout(() => {
+        logToCustomConsole("Found 4 devices");
+      }, 3000);
+      setTimeout(() => {
+        logToCustomConsole("Finding Saroj's Facebook account");
+      }, 4000);
+      setTimeout(() => {
+        logToCustomConsole("Tracking Finished");
+      }, 5000);
+      setTimeout(() => {
+        logToCustomConsole("Saroj Bhandari close to you 1 account found");
+      }, 6000);
+      setTimeout(() => {
+        logToCustomConsole("Friends true");
+      }, 7000);
+      setTimeout(() => {
+        logToCustomConsole("Hacking Finished");
+      }, 8000);
+      setTimeout(() => {
+        logToCustomConsole("Cracking Password");
+      }, 9000);
+      setTimeout(() => {
+        logToCustomConsole("Cracking finished");
+      }, 10000);
+    </script>
+  </body>
+</html>
